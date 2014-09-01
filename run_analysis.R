@@ -50,4 +50,4 @@ mergeDataDecasted <- dcast(mergedDataMelted, subject + activity ~ variable, mean
 tidyData <- mergeDataDecasted
 
 # Write tidy data file
-write.table(tidyData, file="tidy.txt",fileEncoding="UTF-8")
+write.table(tidyData, file="tidy.txt",fileEncoding="UTF-8",row.name=FALSE)
