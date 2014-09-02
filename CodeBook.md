@@ -23,7 +23,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 <li>activity - The label of the activity performed when the corresponding measurements were taken
 
 ##Features Extracted
-Only features containing the abbreviation "Mean" or "Std" were retained.  All others were removed from the dataset.
+Only features containing the abbreviation "Mean" or "Std" were retained, 86 in total.  All others were removed from the dataset.
 Features remaining with their descriptive camel-case variable name appear below top-to-bottom in the order they appear left-to-right in the output:
 <ul>
 <li>tBodyAccelerationMeanX</li>
@@ -114,7 +114,7 @@ Features remaining with their descriptive camel-case variable name appear below 
 <li>angleZ,gravityMean</li>
 </ul>
 
-Variable names were transformed to their lowercase equivalent in the tidy set.
+Note: Variable names were transformed to their lowercase equivalent in the tidy set.
 
 ##Transformation
 Data for each subject and activity in features retained was averaged
