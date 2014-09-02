@@ -22,8 +22,12 @@ features <- read.table("features.txt")
 
 # Clean features headings
 features[,2] = gsub('-mean', 'Mean', features[,2])
-features[,2] = gsub('-std', 'Std', features[,2])
+features[,2] = gsub('-std', 'StandardDeviation', features[,2])
 features[,2] = gsub('[-()]', '', features[,2])
+features[,2] = gsub('Acc', 'Acceleration', features[,2])
+features[,2] = gsub('Gyro', 'Gyroscope', features[,2])
+features[,2] = gsub('Freq', 'Frequency', features[,2])
+features[,2] = gsub('Mag', 'Magnitude', features[,2])
 features <- rbind(features, c("562","Subject"), c("563","Activity"))
 
 # Merge test and training datasets
@@ -31,7 +35,7 @@ mergedData <- rbind(trainData, testData)
 colnames(mergedData) <- features$V2
 
 # Trim dataset of extraneous columns
-columnsMeanStd <- grep("Mean|Std", features[,2])
+columnsMeanStd <- grep("Mean|StandardDeviation", features[,2])
 columnsMeanStd <- c(columnsMeanStd,562,563)
 features <- features[columnsMeanStd,]
 mergedData <- mergedData[,columnsMeanStd]

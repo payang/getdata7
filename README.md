@@ -11,6 +11,14 @@ Required as submission are:
 <li> a README.md in the repo with your scripts.
 </ol>
 
+##Content of repository
+
+- Files extracted from data <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">archive</a>.
+- README.md - this file
+- CodeBook.md - description of data
+- R script (run_analysis.R) used to produce a tidy dataset
+- The file (tidy.txt) containing the tidy dataset
+
 ##Data
 Please see the <a HREF="https://github.com/payang/getting_data/blob/master/CodeBook.md">CodeBook</a> for more details.
 

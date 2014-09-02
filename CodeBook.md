@@ -24,96 +24,41 @@ For each record it is provided:
 
 ##Features Extracted
 Only features containing the abbreviation "Mean" or "Std" were retained.  All others were removed from the dataset.
-Features remaining with their cleaned name appear below top-to-bottom in the order they appear left-to-right in the output:
-<ul>
-<li>tbodyaccmeanx</li>
-<li>tbodyaccmeany</li>
-<li>tbodyaccmeanz</li>
-<li>tbodyaccstdx</li>
-<li>tbodyaccstdy</li>
-<li>tbodyaccstdz</li>
-<li>tgravityaccmeanx</li>
-<li>tgravityaccmeany</li>
-<li>tgravityaccmeanz</li>
-<li>tgravityaccstdx</li>
-<li>tgravityaccstdy</li>
-<li>tgravityaccstdz</li>
-<li>tbodyaccjerkmeanx</li>
-<li>tbodyaccjerkmeany</li>
-<li>tbodyaccjerkmeanz</li>
-<li>tbodyaccjerkstdx</li>
-<li>tbodyaccjerkstdy</li>
-<li>tbodyaccjerkstdz</li>
-<li>tbodygyromeanx</li>
-<li>tbodygyromeany</li>
-<li>tbodygyromeanz</li>
-<li>tbodygyrostdx</li>
-<li>tbodygyrostdy</li>
-<li>tbodygyrostdz</li>
-<li>tbodygyrojerkmeanx</li>
-<li>tbodygyrojerkmeany</li>
-<li>tbodygyrojerkmeanz</li>
-<li>tbodygyrojerkstdx</li>
-<li>tbodygyrojerkstdy</li>
-<li>tbodygyrojerkstdz</li>
-<li>tbodyaccmagmean</li>
-<li>tbodyaccmagstd</li>
-<li>tgravityaccmagmean</li>
-<li>tgravityaccmagstd</li>
-<li>tbodyaccjerkmagmean</li>
-<li>tbodyaccjerkmagstd</li>
-<li>tbodygyromagmean</li>
-<li>tbodygyromagstd</li>
-<li>tbodygyrojerkmagmean</li>
-<li>tbodygyrojerkmagstd</li>
-<li>fbodyaccmeanx</li>
-<li>fbodyaccmeany</li>
-<li>fbodyaccmeanz</li>
-<li>fbodyaccstdx</li>
-<li>fbodyaccstdy</li>
-<li>fbodyaccstdz</li>
-<li>fbodyaccmeanfreqx</li>
-<li>fbodyaccmeanfreqy</li>
-<li>fbodyaccmeanfreqz</li>
-<li>fbodyaccjerkmeanx</li>
-<li>fbodyaccjerkmeany</li>
-<li>fbodyaccjerkmeanz</li>
-<li>fbodyaccjerkstdx</li>
-<li>fbodyaccjerkstdy</li>
-<li>fbodyaccjerkstdz</li>
-<li>fbodyaccjerkmeanfreqx</li>
-<li>fbodyaccjerkmeanfreqy</li>
-<li>fbodyaccjerkmeanfreqz</li>
-<li>fbodygyromeanx</li>
-<li>fbodygyromeany</li>
-<li>fbodygyromeanz</li>
-<li>fbodygyrostdx</li>
-<li>fbodygyrostdy</li>
-<li>fbodygyrostdz</li>
-<li>fbodygyromeanfreqx</li>
-<li>fbodygyromeanfreqy</li>
-<li>fbodygyromeanfreqz</li>
-<li>fbodyaccmagmean</li>
-<li>fbodyaccmagstd</li>
-<li>fbodyaccmagmeanfreq</li>
-<li>fbodybodyaccjerkmagmean</li>
-<li>fbodybodyaccjerkmagstd</li>
-<li>fbodybodyaccjerkmagmeanfreq</li>
-<li>fbodybodygyromagmean</li>
-<li>fbodybodygyromagstd</li>
-<li>fbodybodygyromagmeanfreq</li>
-<li>fbodybodygyrojerkmagmean</li>
-<li>fbodybodygyrojerkmagstd</li>
-<li>fbodybodygyrojerkmagmeanfreq</li>
-<li>angletbodyaccmean,gravity</li>
-<li>angletbodyaccjerkmean,gravitymean</li>
-<li>angletbodygyromean,gravitymean</li>
-<li>angletbodygyrojerkmean,gravitymean</li>
-<li>anglex,gravitymean</li>
-<li>angley,gravitymean</li>
-<li>anglez,gravitymean</li>
-</ul>
+Features remaining with their descriptive camel-case variable name appear below top-to-bottom in the order they appear left-to-right in the output:
+
+ [1] "tBodyAccelerationMeanX"                              "tBodyAccelerationMeanY"                              "tBodyAccelerationMeanZ"                             
+ [4] "tBodyAccelerationStandardDeviationX"                 "tBodyAccelerationStandardDeviationY"                 "tBodyAccelerationStandardDeviationZ"                
+ [7] "tGravityAccelerationMeanX"                           "tGravityAccelerationMeanY"                           "tGravityAccelerationMeanZ"                          
+[10] "tGravityAccelerationStandardDeviationX"              "tGravityAccelerationStandardDeviationY"              "tGravityAccelerationStandardDeviationZ"             
+[13] "tBodyAccelerationJerkMeanX"                          "tBodyAccelerationJerkMeanY"                          "tBodyAccelerationJerkMeanZ"                         
+[16] "tBodyAccelerationJerkStandardDeviationX"             "tBodyAccelerationJerkStandardDeviationY"             "tBodyAccelerationJerkStandardDeviationZ"            
+[19] "tBodyGyroscopeMeanX"                                 "tBodyGyroscopeMeanY"                                 "tBodyGyroscopeMeanZ"                                
+[22] "tBodyGyroscopeStandardDeviationX"                    "tBodyGyroscopeStandardDeviationY"                    "tBodyGyroscopeStandardDeviationZ"                   
+[25] "tBodyGyroscopeJerkMeanX"                             "tBodyGyroscopeJerkMeanY"                             "tBodyGyroscopeJerkMeanZ"                            
+[28] "tBodyGyroscopeJerkStandardDeviationX"                "tBodyGyroscopeJerkStandardDeviationY"                "tBodyGyroscopeJerkStandardDeviationZ"               
+[31] "tBodyAccelerationMagnitudeMean"                      "tBodyAccelerationMagnitudeStandardDeviation"         "tGravityAccelerationMagnitudeMean"                  
+[34] "tGravityAccelerationMagnitudeStandardDeviation"      "tBodyAccelerationJerkMagnitudeMean"                  "tBodyAccelerationJerkMagnitudeStandardDeviation"    
+[37] "tBodyGyroscopeMagnitudeMean"                         "tBodyGyroscopeMagnitudeStandardDeviation"            "tBodyGyroscopeJerkMagnitudeMean"                    
+[40] "tBodyGyroscopeJerkMagnitudeStandardDeviation"        "fBodyAccelerationMeanX"                              "fBodyAccelerationMeanY"                             
+[43] "fBodyAccelerationMeanZ"                              "fBodyAccelerationStandardDeviationX"                 "fBodyAccelerationStandardDeviationY"                
+[46] "fBodyAccelerationStandardDeviationZ"                 "fBodyAccelerationMeanFrequencyX"                     "fBodyAccelerationMeanFrequencyY"                    
+[49] "fBodyAccelerationMeanFrequencyZ"                     "fBodyAccelerationJerkMeanX"                          "fBodyAccelerationJerkMeanY"                         
+[52] "fBodyAccelerationJerkMeanZ"                          "fBodyAccelerationJerkStandardDeviationX"             "fBodyAccelerationJerkStandardDeviationY"            
+[55] "fBodyAccelerationJerkStandardDeviationZ"             "fBodyAccelerationJerkMeanFrequencyX"                 "fBodyAccelerationJerkMeanFrequencyY"                
+[58] "fBodyAccelerationJerkMeanFrequencyZ"                 "fBodyGyroscopeMeanX"                                 "fBodyGyroscopeMeanY"                                
+[61] "fBodyGyroscopeMeanZ"                                 "fBodyGyroscopeStandardDeviationX"                    "fBodyGyroscopeStandardDeviationY"                   
+[64] "fBodyGyroscopeStandardDeviationZ"                    "fBodyGyroscopeMeanFrequencyX"                        "fBodyGyroscopeMeanFrequencyY"                       
+[67] "fBodyGyroscopeMeanFrequencyZ"                        "fBodyAccelerationMagnitudeMean"                      "fBodyAccelerationMagnitudeStandardDeviation"        
+[70] "fBodyAccelerationMagnitudeMeanFrequency"             "fBodyBodyAccelerationJerkMagnitudeMean"              "fBodyBodyAccelerationJerkMagnitudeStandardDeviation"
+[73] "fBodyBodyAccelerationJerkMagnitudeMeanFrequency"     "fBodyBodyGyroscopeMagnitudeMean"                     "fBodyBodyGyroscopeMagnitudeStandardDeviation"       
+[76] "fBodyBodyGyroscopeMagnitudeMeanFrequency"            "fBodyBodyGyroscopeJerkMagnitudeMean"                 "fBodyBodyGyroscopeJerkMagnitudeStandardDeviation"   
+[79] "fBodyBodyGyroscopeJerkMagnitudeMeanFrequency"        "angletBodyAccelerationMean,gravity"                  "angletBodyAccelerationJerkMean,gravityMean"         
+[82] "angletBodyGyroscopeMean,gravityMean"                 "angletBodyGyroscopeJerkMean,gravityMean"             "angleX,gravityMean"                                 
+[85] "angleY,gravityMean"                                  "angleZ,gravityMean"                                  "Subject"                                            
+[88] "Activity"
+
+Variable names were transformed to their lowercase equivalent in the tidy set.
 
 ##Transformation
-Data for each subject and activity on features retained has been averaged
+Data for each subject and activity in features retained was averaged
 and written to the "tidy.txt" file for future analysis.
