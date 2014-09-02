@@ -7,7 +7,7 @@ Required as submission are:
 <ol>
 <li> a tidy data set as described below,
 <li> a link to a Github repository with the script used for performing the analysis, and
-<li> a code book that describes the variables, the data, and any transformations or work performed to clean up the data called <a HREF="https://github.com/payang/getting_data/blob/master/CodeBook.md">CodeBook.md</a>.
+<li> a code book that describes the variables, the data, and any transformations or work performed to clean up the data called <a HREF="https://github.com/payang/getdata7/blob/master/CodeBook.md">CodeBook.md</a>.
 <li> a README.md in the repo with your scripts.
 </ol>
 
