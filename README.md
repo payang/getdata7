@@ -20,7 +20,7 @@ Required as submission are:
 - The file (tidy.txt) containing the tidy dataset
 
 ##Data
-Please see the <a HREF="https://github.com/payang/getting_data/blob/master/CodeBook.md">CodeBook</a> for more details.
+Please see the <a HREF="https://github.com/payang/getdata7/blob/master/CodeBook.md">CodeBook</a> for more details.
 
 ##Script: run_analysis.R
 <ul>
